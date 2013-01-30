@@ -1,1 +1,5 @@
 Hello World!
+Add the languages that you know!
+Console.WriteLine("Hello World!") //C#
+System.out.println("Hello World!")//Java 1.7
+print "Hello World!" //Python
