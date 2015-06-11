@@ -1,1 +1,63 @@
 Hello World!
+/*
+ * The Bignum format is an array of `BignumInt'. The first
+ * element of the array counts the remaining elements. The
+ * remaining elements express the actual number, base 2^BIGNUM_INT_BITS, _least_
+ * significant digit first. (So it's trivial to extract the bit
+ * with value 2^n for any n.)
+ *
+ * All Bignums in this module are positive. Negative numbers must
+ * be dealt with outside it.
+ *
+ * INVARIANT: the most significant word of any Bignum must be
+ * nonzero.
+ */
+
+Bignum Zero = bnZero, One = bnOne, Ten = bnTen;
+
+static Bignum newbn(int length)
+{
+    Bignum b;
+
+    assert(length >= 0 && length < INT_MAX / BIGNUM_INT_BITS);
+
+    b = snewn(length + 1, BignumInt);
+    memset(b, 0, (length + 1) * sizeof(*b));
+    b[0] = length;
+    return b;
+}
+
+void bn_restore_invariant(Bignum b)
+{
+    while (b[0] > 1 && b[b[0]] == 0)
+	b[0]--;
+}
+
+Bignum copybn(Bignum orig)
+{
+    Bignum b = snewn(orig[0] + 1, BignumInt);
+    if (!b)
+	abort();		       /* FIXME */
+    memcpy(b, orig, (orig[0] + 1) * sizeof(*b));
+    return b;
+}
+
+void freebn(Bignum b)
+{
+    /*
+     * Burn the evidence, just in case.
+     */
+    smemclr(b, sizeof(b[0]) * (b[0] + 1));
+    sfree(b);
+}
+
+Bignum bn_power_2(int n)
+{
+    Bignum ret;
+
+    assert(n >= 0);
+
+    ret = newbn(n / BIGNUM_INT_BITS + 1);
+    bignum_set_bit(ret, n, 1);
+    return ret;
+}
