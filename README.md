@@ -3,4 +3,4 @@ Hello World! This is Octocat's first repository. This README file right here was
 
 # Todos
 - [x] Add a file.
-- [ ] Edit `README.md`
+- [x] Edit `README.md`
