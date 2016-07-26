@@ -11,14 +11,16 @@ Read this file before contributing!
 ---
 
 # Contributing Code
-Work in progress section.
+Feel free to contribute code! I have nothing else to say on the matter.
 
 ## Features
-Work in progress section.
+Feel free to add any features you want!
 
+You must prefix the name of the branch for the feature with `feature/`.
 ## Hotfixes
-Work in progress section.
+Those happen sometimes. Make those when you want to fix a `bug` issue.
 
+You must prefix the name of the branch for the hotfix with `hotfix/`.
 # Leaving Issues
 Work in progress section.
 
