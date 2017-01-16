@@ -1,0 +1,5 @@
+name=Arvind
+company=Appdirect
+employeeId=24
+currentAddress=Pune Maharashtra
+currentPincode=412308
