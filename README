@@ -1,1 +1,9 @@
-Hello World!
+//This file prints Hello World
+//Author: Becccca
+
+#include <stdio.h>
+
+int main(void)
+{
+    printf("heyo :3");
+}
