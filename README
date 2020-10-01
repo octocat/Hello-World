@@ -1,1 +1,3 @@
-Hello World!
+print("Hello World!")
+print("You are great")
+print("No one is like you")
