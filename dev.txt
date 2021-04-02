@@ -1,1 +1,1 @@
-dev.txt file
+dev.txt file .
