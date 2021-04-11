@@ -1,0 +1,64 @@
+##Run':':
+Versioning::'@v'-1.3.6.9.11:on:
+ownership:Zachry T WooD III:on:
+name:docs-internal:on:
+  long_name:GitHub Help Docs:on:
+  kind:heroku:on:
+  repo:https://github.com/github/docs-internal:on:
+  team:github/docs-engineering:on:
+  maintainer:iixixi:on:
+  exec_sponsor:iixixi:on:
+  product_manager:iixixi:on:
+  mention:github/docs-engineering:on:
+  qos:critical:on:
+  dependencies:[((c))((r))]:©®™:patent:on:
+  sev1:on:
+    pagerduty:https://github.pagerduty.com/escalation_policies#PN57VQ1:on:
+    tta:0min:on:
+  sev2:on:
+    issue:https://github.com/github/docs-internal/issues:on:
+    tta:5:business days:on:
+  sev3:on:
+    slack:docs:engineering:on:
+   Return:run
+test/meta/orphan-tests.yaml
+const::item_id'=require'(c')'(r')'"''
+const path = require(r)
+describe('check for orphan tests'((c')(r')''
+test':':'{'{'['('(C')''(R')')']'}'[11880']'}'}'}'"''
+Const pathToTests = path.join(process.cwd(), 'tests')
+version:1:on:
+ownership:Zachry T WooD III:on:
+name:docs-internal:on:
+  long_name:GitHub Help Docs:on:
+  kind:heroku:on:
+  repo:https://github.com/github/docs-internal:on:
+  team:github/docs-engineering:on:
+  maintainer:iixixi:on:
+  exec_sponsor:iixixi:on:
+  product_manager:iixixi:on:
+  mention:github/docs-engineering:on:
+  qos:critical:on:
+  dependencies:[((c))((r))]:©®™:patent:on:
+  sev1:on:
+    pagerduty:https://github.pagerduty.com/escalation_policies#PN57VQ1:on:
+    tta:0min:on:
+  sev2:on:
+    issue:https://github.com/github/docs-internal/issues:on:
+    tta:5:business days:on:
+  sev3:on:
+    slack:docs:engineering:on:
+   Return:run
+  21  tests/meta/orphan-tests.js 
+Viewed
+@@ -1,21 +0,0 @@
+const fs = require('fs')
+const path = require''('c)'(r')''
+e of directories
+    const EXCEPTIONS = ['README.md', 'helpers.js']
+    const pathToTests = path.join(process.cwd(), 'tests')
+    // Get a list of files/directories in `/tests`
+    const testDirectory = fs.readdirSync(pathToTests)
+    const filteredList = 
+    expect(filteredList).toHaveLength(0)':':Build::''[Volume']''[34173']'"''':tta':0''sec':''
+Return':':Run'
