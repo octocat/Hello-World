@@ -1,77 +1,103 @@
 * {
-    font-family: sans-serif;
-    font-size: 14px;
-  }
-  .outer_container {
-    display: flex;
-    justify-content: center;
-  }
-  .container {
-    display: flex;
-    flex-direction: column;
-    width: 450px;
-    justify-content: center;
-  }
-  .upper_box {
-    border: 2px solid lightgrey;
-    padding: 10px;  
-  }
-  .above_items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-end;
-  }
-  .footer_items {
-    font-size: 8px;
-    width: 340px;
-    padding: 20px;
-  }
-  #between {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 97%;
-    padding-left: 10px;
-  }
-  #footer_links {
-    font-size: 8px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  #continue_button {
-    display: flex;
-    background-color: orange;
-    justify-content: center;
-    border: 1px solid grey;
-    font-size: 12px;
-    padding: 5px
-  }
-  #create_account {
-    display: flex;
-    background-color: lightgrey;
-    justify-content: center;
-    border: 1px solid grey;
-    font-size: 12px;
-    padding: 5px
-  }
-  #mock_input {
-    border: 1px solid grey;
-    font-size: 16px;
-    width: 97%;
-    padding: 5px
-  }
-  #mock_link {
-    font-family: sans-serif;
-    color: blue;
-  }
-  h1 {
-    font-size: 30px;
-  }
-  footer {
-    font-size: 8px;
-    border: 2px solid grey;
-    display: flex;
-    justify-content: center;
-  }
+  font-family: sans-serif;
+  font-size: 14px;
+}
+.outer_container {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 450px;
+  justify-content: center;
+}
+.upper_box {
+  border: 2px solid lightgrey;
+  padding: 10px;  
+}
+.above_items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.footer_items {
+  font-size: 8px;
+  width: 340px;
+  padding: 20px;
+}
+#odd_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 100px;
+}
+#odd {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: lightgrey;
+  color: darkgrey;
+  width: 75px;
+  height: 25px;
+  font-size: 8px;
+  padding: 5px;
+}
+#between {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 97%;
+  padding-left: 10px;
+}
+#footer_links {
+  font-size: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#copyright_items {
+  font-size: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#continue_button {
+  display: flex;
+  background-color: orange;
+  justify-content: center;
+  border: 1px solid grey;
+  font-size: 12px;
+  padding: 5px
+}
+#create_account {
+  display: flex;
+  background-color: lightgrey;
+  justify-content: center;
+  border: 1px solid grey;
+  font-size: 12px;
+  padding: 5px
+}
+#mock_input {
+  border: 1px solid grey;
+  font-size: 16px;
+  width: 97%;
+  padding: 5px
+}
+#mock_link {
+  font-family: sans-serif;
+  color: blue;
+}
+h1 {
+  font-size: 30px;
+}
+footer {
+  font-size: 8px;
+  border-top: 2px solid grey;
+  display: flex;
+  justify-content: center;
+}
