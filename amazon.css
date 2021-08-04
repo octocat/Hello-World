@@ -1,0 +1,73 @@
+/* Still not sure why my justify-content is not working, will follow up in class */
+body{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    
+    flex-direction: column;
+    margin:auto;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    border-top: 1px black solid;
+    border-left: solid black 1px;
+    border-right: solid black 1px;
+    border-bottom: black 1px solid;
+}
+
+button {
+    background-color:#F7C548;
+    border: rgba(20, 20, 20, 0.973) ridge;
+    
+}
+
+.createAccount {
+    background-color: lightgray;
+}
+
+
+
+
+.policy {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    color: blue;
+    flex-direction: row;
+}
+
+
+.copy {
+    align-content: flex-end;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+}
+
+h1 {
+    font-size: large;
+    font-style: bold;
+}
+
+/* Still not sure why my justify-content is not working, will follow up in class */
