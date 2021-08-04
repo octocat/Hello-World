@@ -26,6 +26,7 @@ body{
 
 button {
     background-color:#F7C548;
+    border: rgba(20, 20, 20, 0.973) ridge;
     
 }
 
@@ -66,6 +67,7 @@ h3 {
 
 h1 {
     font-size: large;
+    font-style: bold;
 }
 
 /* Still not sure why my justify-content is not working, will follow up in class */
