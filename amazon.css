@@ -9,8 +9,9 @@ body{
 
 .container {
     display: flex;
-    margin-left: 475px;
+    
     flex-direction: column;
+    margin:auto;
     width: 50%;
     height: 100%;
     justify-content: center;
@@ -31,6 +32,7 @@ button {
 .createAccount {
     background-color: lightgray;
 }
+
 
 
 
