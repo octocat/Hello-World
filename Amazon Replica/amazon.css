@@ -1,0 +1,46 @@
+.outline{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    padding: 0px 100px 100px;
+    margin: 100px;
+  
+
+    width: 50%;
+} 
+
+.middle{
+    text-align: left;
+
+  }
+
+.button_c{
+    background-color:orange;
+
+}
+
+  .sign{
+      border style: solid;
+      border-color:lightgray;
+      display: flex;
+      flex-wrap: left;
+      flex-direction: column;
+      justify-content: center;
+      justify-content: space-around;
+      
+      width: 80%;
+
+  }
+
+
+  .last{
+      border-top-style: solid;
+      border-width: 1 px;
+      border-color: grey;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      
+      justify-content: space-evenly;
+      justify-content: center;
+  
