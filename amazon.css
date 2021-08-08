@@ -1,0 +1,35 @@
+.box{
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+    padding:0px 0px 0px 0px;
+    margin:100px;
+}
+
+
+.signing {
+    border-style: solid;
+    border-color: light gray;
+    border-width: 1px;
+    padding:10px 20px 20px 20px;
+    margin: 0 35% 0 35;
+    justify-content: center;
+    text-align: center;
+}
+#email{
+    margin:10px;
+    width: 85%;
+    height: 35px;
+    color: gray;
+    font-size: 15px;
+}
+.button{
+    width: 45%;
+    height: 35px
+}
+
+#new 
+.footer{
+    margin:10px;
+
+}
