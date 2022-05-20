@@ -1,0 +1,1 @@
+print("fork denemesi ekledim")
