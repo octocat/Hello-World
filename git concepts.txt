@@ -1,0 +1,52 @@
+
+Concepts of Git
+1 Version Control
+Version control is a system that records changes to a file or set of files over time. Git is a distributed version control system that allows multiple developers to work on a project simultaneously.
+2 Repository
+A repository (repo) is a collection of files and their history. Repositories can be local or remote.
+3 Commit
+A commit is a snapshot of changes made to files in a repository. Commits help in tracking the project's history.
+4 Branch
+A branch is a parallel version of a repository, allowing developers to work on different features or bug fixes simultaneously.
+5 Merge
+Merging combines changes from different branches. It is essential to integrate changes made in one branch into another.
+6 Pull Request
+A pull request (PR) is a proposed change to a repository. It's a way to notify others about changes you've made and request their review.
+Basic Git Commands
+1 Initializing a Repository
+git init
+2 Checking Status
+git status
+3 Adding Changes
+git add <filename>
+4 Committing Changes
+git commit -m "Commit message"
+5 Creating a Branch
+git branch <branch_name>
+6 Switching Branches
+git checkout <branch_name>
+7 Merging Branches
+git merge <branch_name>
+8 Cloning a repository
+git clone <repository_url>
+9 Pushing changes
+git push <remote_name> <branch_name>
+10 Pulling changes
+git pull <remote_name> <branch_name>
+Concepts on GitHub, GitLab, and BitBucket
+1 GitHub
+GitHub is a web-based platform for version control and collaboration. It provides features like pull requests, code review, and issue tracking.
+2 GitLab
+GitLab is a web-based Git repository manager that provides source code management, continuous integration, and more.
+3 BitBucket
+BitBucket is a Git repository management solution by Atlassian. It supports both Git and Mercurial, providing features like code collaboration and CI/CD.
+Industrial Practices of Using Git
+1 Branching Strategy
+Adopting a branching strategy (e.g., Gitflow) helps organize development efforts, separating features, releases, and hotfixes.
+2 Code Reviews
+Implementing code reviews ensures code quality, catches bugs early, and facilitates knowledge sharing among team members.
+
+Resources
+GitHub Guides: https://guides.github.com/
+GitLab Documentation: https://docs.gitlab.com/
+BitBucket Documentation: https://support.atlassian.com/bitbucket/
