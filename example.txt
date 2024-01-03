@@ -1,0 +1,29 @@
+Introduction to Git & GitHub
+Assignment 1
+
+1.Concepts of Git
+Git is a distributed version control system for tracking code changes in software development. Repositories, or repos, store files and their version history locally or remotely. Commits capture snapshots of the code at specific points, reflecting changes made. Branches provide parallel versions for isolated development, commonly used for features or bug fixes. Merging combines changes from one branch into another, typically post feature completion and testing. Pull Requests (PR) propose changes, allowing team review before merging into the main branch. Cloning copies a remote repo to the local machine. Forking creates a personal copy for independent changes. Merge conflicts arise when Git cannot auto-merge changes, requiring manual resolution.
+
+2.Write basic commands of git. 
+
+. To initialize a new Git repository : git init
+. To clone a remote repository to your local machine : git clone <repo>
+. To add changes to the staging area : git add <file>
+. To Commit changes to the repository with a descriptive message : git commit -m "message"
+. To Show the status of changes as untracked, modified, or staged: git status
+. To merge changes from one branch into the current branch : git merge <branch>
+. To fetch changes from a remote repository and merges them into the current branch : git pull
+. To push changes from your local repository to a remote repository :git push
+
+3.Add concepts on GITHUB, GitLab And BitBucket
+. GitHub: GitHub is a widely used web-based platform designed for hosting and collaborating on Git repositories. It serves as a hub for developers to share and contribute to projects. Offering a user-friendly interface, GitHub provides features such as pull requests, issue tracking, and project boards, facilitating seamless collaboration among developers. While GitHub is known for its popularity in open-source projects, it also supports private repositories, making it versatile for both public and private development efforts.
+. GitLab: GitLab is a comprehensive web-based Git repository manager that goes beyond version control. In addition to hosting repositories, GitLab provides robust features such as Continuous Integration/Continuous Deployment (CI/CD) pipelines. GitLab supports both free and self-hosted instances, offering flexibility in deployment options, including cloud-based and on-premises solutions. Its popularity stems from its integrated DevOps capabilities, allowing teams to streamline the development and deployment processes within a single platform.
+. Bitbucket: Bitbucket is a Git repository management solution with a notable emphasis on integration with other Atlassian tools. Offering features like pull requests, pipelines for automated workflows, and Jira integration, Bitbucket is tailored for teams using Atlassian's suite of products. One of its distinct features is the provision of free private repositories, making it an attractive choice for teams seeking a secure and integrated solution for version control and project management within the Atlassian ecosystem.
+
+4.Industrial practices of using Git
+In the industry of software development, Git has evolved into an essential and ingrained practice, fostering efficient collaboration, version control, and codebase management. Common strategies involve structured branching methodologies like Gitflow or GitHub flow, ensuring organized development, feature isolation, and streamlined release management. Code reviews, facilitated through pull requests, are widely embraced for code quality assurance, knowledge sharing, and preemptive issue detection before merging into the main codebase. Integrating Continuous Integration (CI) and Continuous Deployment (CD) into Git workflows automates testing and deployment, upholding a high standard of code reliability and expeditious delivery. Git hooks automate tasks pre- and post-commit, guaranteeing code consistency and quality, while version tagging aids in clearly marking significant milestones in the project's timeline. Comprehensive documentation within the repository provides insights into project structure, coding standards, and setup instructions, adhering to best practices that emphasize collaboration, efficiency, and the consistent delivery of top-tier software products.
+
+5.Cloning a repo to local
+. Open your terminal or command prompt and navigate to the directory where you want the local copy of the repository to be stored using cd command
+. Clone the repositary using clone command - git clone <repository-url>. This command copies the repository and also sets up the connection to the remote repository
+. Move into the directory created by the cloning process - cd <actual name of the cloned repository>
