@@ -1,0 +1,173 @@
+# task
+
+Git is a distributed version control system that helps developers manage and track changes in their source code during software development. GitHub, on the other hand, is a web-based platform that provides hosting for Git repositories and offers additional collaboration features.
+
+Here are some key terms and concepts related to Git and GitHub:
+
+1. **Version Control System (VCS):**
+   - **Definition:** A system that tracks changes in the source code and helps manage different versions of a project.
+   - **Git Perspective:** Git is a distributed version control system, allowing developers to work on a project independently and merge changes later.
+
+2. **Repository:**
+   - **Definition:** A storage location for a project's files and version history.
+   - **Git Perspective:** A Git repository contains all the files, commits, and branches related to a project.
+
+3. **Commit:**
+   - **Definition:** A snapshot of the project at a specific point in time.
+   - **Git Perspective:** Developers make commits to save changes to the repository. Each commit has a unique identifier and a commit message describing the changes.
+
+4. **Branch:**
+   - **Definition:** A parallel line of development within a repository.
+   - **Git Perspective:** Branches allow developers to work on features or bug fixes independently of the main codebase. They can later merge their changes back into the main branch.
+
+5. **Merge:**
+   - **Definition:** Combining changes from one branch into another.
+   - **Git Perspective:** After completing work on a branch, developers merge their changes back into the main branch or another target branch.
+
+6. **Pull Request (PR):**
+   - **Definition:** A request to merge changes from one branch into another.
+   - **Git Perspective:** On GitHub, developers create pull requests to propose changes and have them reviewed before merging into the main branch.
+
+7. **Clone:**
+   - **Definition:** Copying a repository from one location to another.
+   - **Git Perspective:** Developers clone a repository to create a local copy on their machines, enabling them to work on the project.
+
+8. **Fork:**
+   - **Definition:** Creating a personal copy of someone else's repository.
+   - **GitHub Perspective:** Forking is a way to contribute to a project without directly modifying the original repository. Changes made in a fork can be submitted as pull requests.
+
+9. **Push:**
+   - **Definition:** Uploading local changes to a remote repository.
+   - **Git Perspective:** After making changes locally, developers push their commits to the remote repository, making them accessible to others.
+
+10. **Pull:**
+    - **Definition:** Downloading changes from a remote repository to a local one.
+    - **Git Perspective:** Developers pull changes from the remote repository to update their local copies and stay in sync with the latest developments.
+
+Understanding these terms is crucial for effective collaboration and version control in software development using Git and GitHub.
+
+
+git commands
+* git init
+* git add .
+* git commit -m "msg"
+* git branch -M main
+* git push -u origin main
+* git pull origin main
+* git checkout -b <new-branch>
+* git merge <branch>
+* git log or git show HEAD~<n>
+* git reset --hard <commit>
+
+
+# about GitHub, GitLab and BitBucket
+
+GitHub, GitLab, and Bitbucket are popular web-based platforms that provide Git repository hosting services. They offer a variety of collaboration features, issue tracking, continuous integration, and more. Here's an overview of each platform:
+
+### GitHub:
+
+
+- **Overview:**
+  - GitHub is one of the largest and most widely used Git repository hosting services.
+  - It's known for its user-friendly interface and social coding features.
+  - GitHub provides a platform for hosting open-source and private repositories.
+- **Key Features:**
+  - **Collaboration:** Forking, Pull Requests, Code Reviews, and Discussions.
+  - **Issue Tracking:** Integrated issue tracking system for bug tracking and project management.
+  - **Actions:** Automated workflows for Continuous Integration/Continuous Deployment (CI/CD).
+  - **GitHub Actions:** Integrated CI/CD and automation platform.
+  - **Packages:** Hosting for various package managers.
+- **Use Cases:**
+  - Host open-source projects.
+  - Collaborate on private projects.
+  - Contribute to existing projects through Pull Requests.
+
+### GitLab:
+
+- **Overview:**
+  - GitLab is a web-based Git repository manager that provides source code management (SCM), continuous integration, and more.
+  - It comes in two editions: GitLab Community Edition (CE) and GitLab Enterprise Edition (EE).
+  - GitLab allows self-hosting, providing the option to install it on your own infrastructure.
+- **Key Features:**
+  - **Integrated CI/CD:** Built-in CI/CD pipelines.
+  - **Issue Tracking:** Robust issue tracking system.
+  - **Container Registry:** Built-in container registry.
+  - **Wiki and Snippets:** Collaborative documentation and code snippets.
+  - **Code Review:** Web-based Git repository management with code review features.
+- **Use Cases:**
+  - Self-hosted Git repository for organizations.
+  - CI/CD pipelines for automated testing and deployment.
+
+### Bitbucket:
+
+- **Overview:**
+  - Bitbucket is a web-based version control repository hosting service owned by Atlassian.
+  - It supports both Git and Mercurial repositories.
+  - Bitbucket offers both cloud-hosted and on-premises (Bitbucket Server) solutions.
+- **Key Features:**
+  - **Code Collaboration:** Branching, merging, and pull requests.
+  - **Jira Integration:** Integration with Atlassian's issue and project tracking tool, Jira.
+  - **Pipelines:** Integrated CI/CD pipelines.
+  - **Security:** Branch permissions and access controls.
+  - **Bitbucket Server:** Self-hosted version of Bitbucket for on-premises deployment.
+- **Use Cases:**
+  - Host Git or Mercurial repositories.
+  - Collaborate on code with team members.
+  - Integration with other Atlassian products like Jira.
+
+### Comparison:
+
+- **Hosting:**
+  - GitHub and GitLab are cloud-based services, while Bitbucket offers both cloud and on-premises solutions.
+- **Pricing:**
+  - GitHub offers free public repositories and charges for private repositories.
+  - GitLab offers a free tier for both public and private repositories, with additional features in the paid plans.
+  - Bitbucket offers free repositories for small teams and charges for larger teams and additional features.
+- **Integration:**
+  - All three platforms integrate with various third-party services and tools.
+  - GitHub integrates well with services like Travis CI, CircleCI, and more.
+  - GitLab provides integrated CI/CD pipelines and has integrations with various tools.
+  - Bitbucket integrates seamlessly with Jira and other Atlassian products.
+
+The choice between GitHub, GitLab, and Bitbucket often depends on factors such as personal preference, team requirements, and the specific features offered by each platform. Each of them is powerful and widely used in the software development community.
+
+
+**Industrial Practices of Using Git:**
+
+1. **Version Control:**
+   - **Branching and Merging:** Utilize branches for feature development and bug fixes. Merge changes back into the main branch (e.g., master) after thorough testing.
+   - **Tagging:** Employ tagging to mark releases or significant points in the project history.
+
+2. **Collaborative Development:**
+   - **Pull Requests (PRs):** Encourage developers to submit PRs for code review before merging changes. PRs facilitate discussion and ensure code quality.
+   - **Code Reviews:** Conduct thorough code reviews to catch issues early, share knowledge, and maintain code quality.
+
+3. **Continuous Integration/Continuous Deployment (CI/CD):**
+   - **Automated Builds:** Implement CI tools for automatic builds upon code changes, ensuring a consistent and reproducible build process.
+   - **Automated Testing:** Integrate automated testing into the CI pipeline to identify and address issues promptly.
+   - **Continuous Deployment:** Automate deployment processes to streamline the release cycle.
+
+4. **Repository Management:**
+   - **Git Hosting Services:** Use centralized Git hosting platforms (GitHub, GitLab, Bitbucket) for efficient repository management, collaboration, and access control.
+   - **Access Control:** Define and enforce access controls to restrict write access to specific branches, ensuring code security.
+
+5. **Documentation:**
+   - **Wiki and READMEs:** Leverage project wikis and README files to provide comprehensive documentation, including project setup, architecture, and contribution guidelines.
+   - **Commit Messages:** Encourage meaningful and descriptive commit messages for better understanding and traceability.
+
+6. **Code Quality and Standards:**
+   - **Linting:** Employ code linters to enforce coding standards and maintain consistent code formatting.
+   - **Code Analysis:** Use static code analysis tools to identify potential issues and improve overall code quality.
+
+7. **Integration with Issue Tracking:**
+   - **Jira or Trello Integration:** Connect Git repositories with issue tracking systems for streamlined project management.
+   - **Linking Commits to Issues:** Establish traceability by referencing issue numbers in commit messages.
+
+8. **Git Hooks:**
+   - **Custom Hooks:** Utilize Git hooks for running custom scripts or actions at different stages of the Git workflow, ensuring adherence to project-specific processes.
+
+9. **Training and Best Practices:**
+   - **Team Training:** Provide training on Git workflows and best practices to ensure a consistent and efficient development process.
+   - **Knowledge Sharing:** Foster a culture of knowledge sharing through collaborative tools and practices within the development team.
+
+
