@@ -1,0 +1,7 @@
+                         Concepts of Git
+1. Repository:  A repository is the most basic element of GitHub. A repository in Git is a storage location where a project's files and version history are stored. Repositories can have multiple collaborators and can be either public or private. 
+2. Cloning: A process of creating a copy of the existing git repository in the local machine. It helps to work on the project locally.
+3. Forking:  The process of creating a personal copy of someone a repository which enables independent development. It helps to work with changes without affecting the original project. It allows to make changes and propose the changes to the original repository.
+4. Branch:  It is the separate version of original repository. It allows to work on different features without affecting the main code. Later we can decide whether to merge those changes back to the project.
+5. Merge: It allows to record the changes made to the project over time and helps to combine the changes from two or more branches into a single branch.
+6. Pull request: Pull requests let you tell others about changes you've pushed to a branch in a repository on GitHub.
