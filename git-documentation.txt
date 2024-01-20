@@ -1,0 +1,102 @@
+Git -- is a version control system for tracking changes in computer files. It allows mutliple people to work on the same project simultaneously.
+A version control system enables you to roll back files to an earlier state, examine modifications, and identify the latest contributor to a particular change that could be contributing to an issue, among other functionalities.
+
+
+a) Terminologies used   
+
+1. Repository (Repo) :
+	Repo is a directory where the project resides. 
+
+2. Working Directory : 
+	It is where you make changes to your project files.
+
+3. Staging :
+	Process of preparing and organising changes before they are committed to the repo. Not all modified files are committed and only the ones in the staging area is considered for committing.
+
+4. Committing :
+	It is the process of saving the changes you've made to your project. It makes the changes permanent.
+
+5. Branch :
+	Another line of development that allows you to work on a specific set of changes without affecting the main or other branches of your project. By deafult, Git has a master branch.
+
+6. Merge :
+	After completion of your work on a branch , you can merge the branch back into another branch (often the main branch).
+
+7. Remote Repo :
+	The repo which is available on the server/internet.
+
+8. Local Repo :
+	The repo which is available in your machine.
+
+6. Pull :
+	It copies the changes from a remote repo instance to a local one.
+
+7. Clone :
+	It creates an instance of the repository. 
+
+8. Push :
+	It copies the changes from a local repo instance to a remote one. 
+
+
+b) Basic Git Commands
+
+1. Initializing a Repository:
+	git init
+
+2. Checking Status:
+	git status
+
+3. Adding Changes:
+	git add <filename>
+
+4. Commit Changes:
+	git commit -m "Commit message"
+
+5. Creating a Branch:
+	git branch <branch-name>
+
+6. Switching Branches:
+	git checkout <branch-name>
+
+7. Merging Branches:
+	git merge <branch-name>
+
+8. Connect repo to a remote server:
+	git remote add origin <server>
+
+9. Push :
+	git push origin <branch-name>
+
+10. Pull :
+	git pull origin <branch-name>
+
+c) GitHub, GitLab, and Bitbucket
+
+1. GitHub :
+	GitHub has a large and active community. It hosts a large number of open source projects. 
+	- GitHub actions : allows users to automate workflows directly within their repos.
+	- GitHub issues : for the purpose of planning, tracking, and visualizing progress of issues.
+
+2. GitLab :
+	GitLab is a web-based platform that provides hosting for Git repositories and offers a comprehensive set of DevOps tools for the entire development lifecycle.
+	- code review with live preview of changes
+	- strong emphasis on security
+	- extended project management 
+	- caters to other roles as well ( designers etc)
+
+3. Bitbucket :
+	Bitbucket serves as a web-based platform offering hosting for both Git and Mercurial repositories and is commonly linked with the Atlassian ecosystem. While providing a fundamental array of source control management features, Bitbucket includes functions such as repository navigation, pull requests, code review, branch permissions, and the incorporation of Bitbucket Pipelines for the establishment and execution of CI/CD workflows.
+
+d) Industrial Practices of Using Git
+	- commit code in small batches
+	- make atomic commits - single unit of work (one task or one fix)
+	- use branches
+	- write descriptive commit messages in imperative mood
+	- code reviews
+
+e) Cloning a Repo to Local
+To clone a repository from a remote server :
+
+git clone <repository-url>
+
+Replace <repository-url> with the URL of the repository you want to clone.
