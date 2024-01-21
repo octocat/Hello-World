@@ -1,0 +1,58 @@
+﻿3.  Concepts
+
+
+
+
+GitHub
+It is a web-based platform for version control using Git. It provides a collaborative environment for software developers to host and review codes, manage projects and facilitate team collaboration. It is widely used  for both open source and collaborative projects.
+
+
+
+
+GitLab
+It is a web-based git repository that provides free, open and private repositories. It is a complete DevOps platform that enables professionals to perform all tasks in a project from project planning and source code management to monitoring and security.
+
+
+
+
+BitBucket
+It is the repository management tool that is specially built for expert teams and professionals. It is also called as Git repository management software and is a central hub for handling all the git repositories. It allows users to do basic git operations such as reviewing or merging code. It is focused on private repositories while GitHub is a better fit for public repositories.  
+
+
+
+
+
+
+
+
+4.Industrial practices of using Git
+
+
+* Version Control - Git is primarily used for version control, enabling teams to track changes made to the source code over time. 
+
+
+* Write descriptive commit messages
+
+
+* Collaborative Development - Git facilitates collaboration among developers, allowing them to work on different parts of a project simultaneously.
+
+
+* Identify a branching strategy.
+
+
+
+
+5.Cloning a repository to local 
+
+
+To clone a Git repository onto your local machine, begin by copying the repository URL from GitHub. Open a terminal window and navigate to the destination directory where you intend to store the local copy. Initiate the cloning process using the `git clone’ command followed by the repository URL. Upon completion of the cloning process, you will have successfully obtained a local copy of the repository within the specified directory.
+
+
+
+
+6.Resources
+
+
+* Google.
+* Chatgpt.
+* Youtube(Apna college).
