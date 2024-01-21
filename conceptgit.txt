@@ -1,0 +1,14 @@
+1. Concepts of Git
+•	Repository
+A Git repository is a central storage location for managing and tracking changes in files and directories. It is a crucial component of the Git version control system, which allows multiple developers to work on a project simultaneously .
+•	Cloning
+Cloning basically means we want to get a local copy of the code present in the repository. After cloning,  we can  then do whatever changes we like in the code ,the original repository also changes.
+•	Forking
+Forking creates your own copy of a repository in a remote location. We will be able to contribute changes to our copy of the repository without affecting the original repository.
+•	Branch
+Git Branches allow us to work on different versions of our code simultaneously. If we make changes on one branch, they do not impact the other branches until we merge or integrate the changes.
+•	Merge
+Git marge will help to combine the changes from two or more branches into a single branch. Developers will work on different branches to improve code or to develop the code after completion we can merge them into a single version of the code.
+•	Pull Request
+Pull requests let you tell others about changes you've pushed to a branch in a repository on GitHub. Once a pull request is opened, collaborators can engage in discussions about the proposed changes.The pull request provides a platform for reviewing the code modifications, suggesting improvements, and addressing concerns.
+

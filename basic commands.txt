@@ -1,0 +1,20 @@
+2.Basic Commands 
+•	Git config
+Git config lets you get and set configuration variables that control all aspects of how Git looks and operates.
+•	Git init
+ git init command is to initialize the new working environment or a new git repository to work on a new project. Before performing the git init command git will not track the files that are in the system.After initializing you can commit the files and push them to the remote repository.
+
+•	Git clone
+git clone creates a local copy of a project that already exists remotely. The clone includes all the project's files, history, and branches.
+•	Git add
+git add command is used to add all the local changes of your working copy to staging area so that those changes can be committed to you local repository.
+•	Git commit
+used to save changes to the local repository. When you make modifications to your project's files and want to record those changes in the version history, you use the git commit command.
+•	Git branch
+Shows the branches that are worked on locally
+•	Git push
+The git push command is used to upload local repository content to a remote repository
+•	Git Pull
+The pull command is used to access the changes from a remote repository to the local repository
+•	Git merge
+ The git merge command facilitates you to take the data created by git branch and integrate them into a single branch
