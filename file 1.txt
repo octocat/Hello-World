@@ -1,0 +1,25 @@
+1.Concepts of git explaining various terms
+1. Repository
+It is a directory that stores all the files, folders and contents needed for your project. It can be local-on your computer or remote-on a server.
+2. Forking
+It is creating a copy of a repository which allow us to make changes without affecting the original repository.
+3.Cloning
+It is the process of creating a copy of remote repository on your local system.
+4.Merge
+It helps to combine the changes from one branch into main branch.
+5.Branch
+It is a separate version of the repository which allow us to work on different features without affecting the main codebase.
+6.Pull Request
+Pull requests let you tell others about changes you've pushed to a branch in a repository.
+
+2.Write basic commands of git.
+1.git config - lets you get and set configuration variables that control all aspects of how git looks and operate.
+2.git init – the command is used to initialize a new git repository to work on a new project.
+3.git clone – to create a working copy of an existing repository to a local system.
+4.git add – the command is used to add all the local changes of your working copy to staging area so that those changes can be committed to your local repository.
+5.git commit – the command is used to record changes made to the local repository.
+6.git branch – the command is used to determine what branch the local repository is on.
+7.git push – the command is used to transfer the commits or pushing the contents from a local repository to a remote repository.
+8.git pull – the command is used to get updates from the remote repository.
+9.git merge – the command is used to combine data created by git branch and integrate them into single branch.
+

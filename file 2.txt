@@ -1,0 +1,21 @@
+3.Concepts on GITHUB, GitLab and BitBucket
+GITHUB
+It is a web-based platform for version control using git. It provides a collaborative environment for software developers to host and review codes, manage projects and facilitates team collaborations. It is a widely used platform for both open source and private software development projects.
+GITLAB
+It is a web-based got repository that provides free open and private repositories, issue – following capabilities. It is a complete DevOps platform that enables professionals to perform all the task in a projects - from project planning and source code management to monitoring and security.
+BITBUCKET
+It is the repository management tool that is specially built for expert teams and professionals. It is also called as git repository management software and is a central hub for handling all the git repository. It allows users to do basic git operations such as reviewing or merging code. BitBucket is focused on private repositories while github is a better fit for public repositories.
+4.Industrial practices of using git.
+* Make incremental , small changes
+* Develop using branches
+* Write descriptive commit messages
+* Obtain feedback through code review
+* Identify a branching strategy
+5.Cloning a repo to local
+To clone a Git repository to your local machine, first, copy the repository URL from the hosting platform such as GitHub or GitLab. Open a terminal window and navigate to the directory where you want to store the local copy. Use the git clone command followed by the repository URL to initiate the cloning process. Once the cloning is complete, you will have a local copy of the repository in the specified directory. You can navigate into the cloned directory using the cd command and start working on the project locally, with the ability to make changes and synchronize with the remote repository when needed.
+6. Resources
+GitHub docs
+Stack overflow
+Geeksforgeeks
+Chatgpt
+
