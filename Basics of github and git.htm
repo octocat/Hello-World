@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>1. Concepts of Git</h2>
+<ul>
+<li><b>Version Control System (VCS):</b></li>
+<p align="justify">Version Control System (VCS) is a software that helps software developers to work together and maintain a complete history of their work.Git's distributed nature not only allows for offline work but also enables developers to experiment with new ideas in their own branches       without affecting the main project. This makes it easier to innovate and collaborate.VCS allows developers to work simultaneously and does not allow overwriting each other’s changes. It also maintains a history of every version.</p>
+<li><b>Repository</b></li><p align="justify">A Git repository is a central storage location for managing and tracking changes in files and directories. It is a crucial component of the Git version control system, which enables collaborative development and allows multiple developers to work on a project simultaneously. Git repositories are widely used in software development, where they facilitate efficient and controlled code management.A Git repository stores all the versions of files within a project, enabling developers to track changes, collaborate, and easily revert to previous versions if needed. Each file's changes are recorded as commits, which are organized into branches, providing a structured history of the project's development. This system allows developers to work on different branches independently and later merge their changes back into the main branch.</p>
+<li><b>Commit:</b></li>
+<p align="justify">Commits are the core building block units of a Git project timeline.Commits in Git are lightweight and represent a logical unit of change. Each commit has a parent commit, forming a linked history, making it easier to understand how changes relate to each other.In a Git repository, every commit is like a snapshot of the project at a particular moment. This enables developers to roll back to any previous state, review changes, and understand the evolution of the codebase over time</p>
+<li><b>Branch:</b></li>
+<p align="justify">A branch represents an independent line of development. Branches serve as an abstraction for the edit/stage/commit process. It can be thought of as a way to request a brand new working directory, staging area, and project history. New commits are recorded in the history for the current branch, which results in a fork in the history of the project.Branching in Git is efficient and allows for the creation of isolated environments for different features or bug fixes. This promotes parallel development and enables teams to work on multiple tasks simultaneously.</p>
+<li><b>Merge</b></li>
+<p align="justify">Git's merging capabilities help seamlessly integrate changes from multiple sources. The git merge command lets you take the independent lines of development created by git branch and integrate them into a single branch.  The current branch will be updated to reflect the merge, but the target branch will be completely unaffected. The merge process includes a three-way merge algorithm that combines changes from two branches and a common ancestor.</p>
+<li><b>Pull Request:</b></li>
+<p align="justify">A pull request, often abbreviated as PR, serves as a proposal to merge changes made in one branch of a repository into another, typically from a feature branch into the main branch. Pull requests are essential for facilitating code reviews, encouraging collaboration, and maintaining a clean, well-documented codebase.It not only proposes changes but also serves as a collaboration space. Team members can review the changes, ask questions, and discuss before the changes are merged into the main branch.</p>
+</ul>
+<h2>2. Basic Git Commands</h2>
+<ul>
+<li><b>git config</b></li>
+<p align="justify">The git config command is used initially to configure the user.name and user.email. This specifies what email id and username will be used from a local repository.
+When git config is used with --global flag, it writes the settings to all repositories on the computer.</p>
+<li><b>git init</b></li>
+<p align="justify">The command git init is used to create an empty Git repository. 
+After the git init command is used, a .git folder is created in the directory with some subdirectories,creating a .git directory to store versioning information. Once the repository is initialized, the process of creating other files begins.</p>
+
+<li><b>git status</b></li>
+<p align="justify">The status command provides the current working branch and displays information about any untracked, modified, or staged files in the working directory. The git status command tells the current state of the repository.</p>
+
+<li><b>git add</b> </li>
+<p align="justify">Staging allows you to select changes to be included in the next commit. This process is useful for grouping related changes together. Add command is used after checking the status of the files, to add those files to the staging area.Before running the commit command, "git add" is used to add any new or modified files.
+The command is used like "git add file_name"</p>
+
+<li><b>git commit</b></li>
+<p align="justify">Commits record changes made to the repository. Including a meaningful commit message is crucial for understanding the purpose of each change.
+Changes can be committed using the command "git commit -m "Your commit message"</p>
+
+<li><b>git branch</b></li>
+<p align="justify">Branches provide isolation for development work. A new branch is like a parallel universe where changes can be made independently. The git branch command is used to determine what branch the local repository is on.
+The command enables adding and deleting a branch.
+The command for creating a branch is "git branch branch_name".</p>
+
+<li><b>git checkout</b></li>
+<p align="justify">Switching between branches is essential for working on different features or fixes without interference.
+To switch from one branch to another, the command "git checkout branch_name" can be used.</p>
+
+<li><b>git merge</b></li>
+<p align="justify">Merging combines changes from one branch into another. Git automatically handles the merging process but may require manual resolution in case of conflicts.
+The command is used as "git merge branch_name".</p>
+
+<li><b>git log</b></li>
+<p align="justify">The log command provides a chronological list of commits, displaying commit messages, authors, and timestamps.
+The command helps in understanding the state of the current branch by showing the commits that lead to this state.</p>
+</ul>
+<h2>3. Concepts on GitHub, GitLab, and BitBucket</h2>
+<ul>
+<li><b>GitHub:</b></li>
+<p align="justify">GitHub offers a variety of collaboration features such as code review, discussions in issues, and automation through GitHub Actions. It fosters a social coding environment. The major functionality of GitHub is repository branching and forking, pull and merge requests, codebase cloning. The main functionality works quickly – perhaps, the fastest among the three. Developers can quickly upload files to remote repositories and receive immediate notifications from other contributors. </p>
+
+<li><b>GitLab:</b></li>
+<p align="justify">GitLab extends beyond version control, providing an integrated platform for the entire DevOps lifecycle. It includes features for planning, source code management, CI/CD, monitoring, and security. The popularity of GitLab is growing due to the increased adoption of CI/CD and DevOps. Other code repositories offer CI features in their premium versions, but in GitLab, CI support is included in a free plan. Also, developers can host CI GitLab integration on their servers. </p>
+
+<li><b>BitBucket:</b></li>
+<p align="justify">BitBucket integrates well with other Atlassian tools and provides features like pull requests, Jira integration, and Pipelines for automated builds and deployments.BitBucket allows developers to host code on private and public repositories. Users can create an unlimited number of private repositories – as long as no more than 5 users use them. The main distinction of this platform is its integration with Jira and Asana. Ever since Atlassian acquired BitBucket, it has become a native component of their ecosystem. </p>
+</ul>
+
+<h2>4. Industrial Practices of Using Git</h2>
+<ul>
+<li><b>Feature Branch Workflow:</b></li>
+<p align="justify">Feature branches isolate work on new features, making it easier to collaborate without interfering with the main branch. They are typically short-lived and get merged back into the main branch once the feature is complete. The core idea behind the Feature Branch Workflow is that all feature development should take place in a dedicated branch instead of the main branch. This encapsulation makes it easy for multiple developers to work on a particular feature without disturbing the main codebase. It also means the main branch will never contain broken code, which is a huge advantage for continuous integration environments.</p>
+
+<li><b>Git Flow:</b></li>
+<p align="justify">Gitflow is an alternative Git branching model that involves the use of feature branches and multiple primary branches. It was first published and made popular by Vincent Driessen at nvie. Compared to trunk-based development, Gitflow has numerous, longer-lived branches and larger commits. Under this model, developers create a feature branch and delay merging it to the main trunk branch until the feature is complete. These long-lived feature branches require more collaboration to merge and have a higher risk of deviating from the trunk branch. They can also introduce conflicting updates.Git Flow provides a set of branching conventions for a more structured development process. It defines branches for features, releases, and hotfixes, promoting a standardized workflow.</p>
+
+<li><b>CI/CD:</b></li>
+<p align="justify">Continuous Integration (CI) ensures that code changes are automatically tested, helping identify and fix issues early. Continuous Deployment (CD) automates the release process, making it faster and more reliable. CI/CD enables organizations to prevent bugs and coding failures, ensuring a seamless and continual process of software development and updates.
+As applications scale, the functionalities of CI/CD play a crucial role in reducing complexity, enhancing efficiency, and optimizing workflows.
+By automating the manual intervention required to move new code from a commit to production, CI/CD minimizes downtime and accelerates code releases. This swift integration of updates and code changes enables more frequent and effective incorporation of user feedback, leading to positive outcomes for users and increased overall customer satisfaction.</p>
+</ul>
+<h2>5. Cloning a Repo to Local</h2>
+<ul><p align="justify">
+When you create a repository on GitHub.com, it exists as a remote repository. You can clone your repository to create a local copy on your computer and sync between the two locations.<br>To clone a remote repository to your local machine the following command can be used:
+<b>"git clone repository_url"</b>.<br>
+This command establishes a connection between your local machine and the remote repository, creating a copy of the entire repository on your system.</p></ul>
+
+</body>
+</html>
