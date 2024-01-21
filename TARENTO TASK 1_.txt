@@ -1,0 +1,115 @@
+TARENTO TASK 1
+
+I: Concepts of Git explaining various terms
+Git is a free and open-source version control system, originally created by Linus Torvalds in 2005. Unlike older centralized version control systems such as SVN and CVS, Git is distributed: every developer has the full history of their code repository locally. Git has become the default way to store and transport code in the DevOps generation. Git also has excellent support for branching, merging, and rewriting repository history, which has led to many innovative and powerful workflows and tools. Git is the most widely used version control system in the world today and is considered the modern standard for software development.
+Repository ("Repo")
+In many ways, you can think of a Git repository as a directory that stores all the files, folders, and content needed for your project. What it actually is, is the object database of the project, storing everything from the files themselves, to the versions of those files, commits, deletions, etc.
+Master
+The primary branch of all repositories. All committed and accepted changes should be on the master branch. You can work directly from the master branch, or create other branches.
+Branch
+A version of the repository that diverges from the main working project. Branches can be a new version of a repository, experimental changes, or personal forks of a repository for users to alter and test changes.
+Clone
+A clone is a copy of a repository or the action of copying a repository. When cloning a repository into another branch, the new branch becomes a remote-tracking branch that can talk upstream to its origin branch (via pushes, pulls, and fetches).
+Fetch
+By performing a Git fetch, you are downloading and copying that branch's files to your workstation. Multiple branches can be fetched at once, and you can rename the branches when running the command to suit your needs.
+Fork
+Creates a copy of a repository.
+Merge
+Taking the changes from one branch and adding them into another (traditionally master) branch. These commits are usually first requested via pull request before being merged by a project maintainer.
+Pull/Pull Request
+If someone has changed code on a separate branch of a project and wants it to be reviewed to add to the master branch, that someone can put in a pull request. Pull requests ask the repo maintainers to review the commits made, and then, if acceptable, merge the changes upstream. A pull happens when adding the changes to the master branch.
+Tag
+Tags are used to define which portions of a project's Git history is most important. Often this is used to note point releases of a project. Tags can be added to the commit you are working with or added after-the-fact when needed.
+
+
+II: Basic commands of git
+1. Git clone
+Git clone is a command for downloading existing source code from a remote repository (like Github, for example). In other words, Git clone basically makes an identical copy of the latest version of a project in a repository and saves it to your computer.
+2. Git branch
+Branches are highly important in the git world. By using branches, several developers are able to work in parallel on the same project simultaneously. We can use the git branch command for creating, listing and deleting branches.
+3. Git checkout
+To work in a branch, first you need to switch to it. We use git checkout mostly for switching from one branch to another. We can also use it for checking out files and commits.
+
+4. Git status
+The Git status command gives us all the necessary information about the current branch. 
+We can gather information like:
+* Whether the current branch is up to date
+* Whether there is anything to commit, push or pull
+* Whether there are files staged, unstaged or untracked
+* Whether there are files created, modified or deleted
+
+
+5. Git add
+When we create, modify or delete a file, these changes will happen in our local and won't be included in the next commit (unless we change the configurations).
+We need to use the git add command to include the changes of a file(s) into our next commit. 
+6. Git commit
+This is maybe the most-used command of Git. Once we reach a certain point in development, we want to save our changes (maybe after a specific task or issue).
+Git commit is like setting a checkpoint in the development process which you can go back to later if needed.
+We also need to write a short message to explain what we have developed or changed in the source code.
+
+7. Git push
+After committing your changes, the next thing you want to do is send your changes to the remote server. Git push uploads your commits to the remote repository.
+
+8. Git pull
+The git pull command is used to get updates from the remote repo. This command is a combination of git fetch and git merge which means that, when we use git pull, it gets the updates from remote repository (git fetch) and immediately applies the latest changes in your local (git merge).
+9. Git revert
+Sometimes we need to undo the changes that we've made. There are various ways to undo our changes locally or remotely (depends on what we need), but we must carefully use these commands to avoid unwanted deletions.A safer way that we can undo our commits is by using git revert
+The advantage of using git revert is that it doesn't touch the commit history. This means that you can still see all of the commits in your history, even the reverted ones. 
+Another safety measure here is that everything happens in our local system unless we push them to the remote repo. That's why git revert is safer to use and is the preferred way to undo our commits.
+10. Git merge
+When you've completed development in your branch and everything works fine, the final step is merging the branch with the parent branch (dev or master). This is done with the git merge command.
+
+III: Concepts on Github, GitLab And BitBucket
+GitHub 
+The major functionality of GitHub is repository branching and forking, pull and merge requests, codebase cloning. The main functionality works quickly – perhaps, the fastest among the three. Developers can quickly upload files to remote repositories and receive immediate notifications from other contributors. 
+GitHub also has wiki support – a built-in tool for making and sharing version documentation. GitHub offers a lot of add-ons for increasing development productivity and improving collaboration. 
+GitLab
+The popularity of GitLab is growing due to the increased adoption of CI/CD and DevOps. Other code repositories offer CI features in their premium versions, but in GitLab, CI support is included in a free plan. Also, developers can host CI GitLab integration on their servers. 
+
+Bitbucket
+Bitbucket allows developers to host code on private and public repositories. Users can create an unlimited number of private repositories – as long as no more than 5 users use them. The main distinction of this platform is its integration with Jira and Asana. Ever since Atlassian acquired Bitbucket, it has become a native component of their ecosystem. 
+As a result, developers can easily monitor Bitbucket activity in Jira, measure their productivity, and connect organization boards to collaborative repositories. It’s convenient because project managers can easily keep track of the project’s organizational and tech aspects. 
+
+
+IV: Industrial practices of using Git.
+Git is a DevOps tool used for source code management. It is a free and open-source version control system used to handle small to very large projects efficiently. Git is used to tracking changes in the source code, enabling multiple developers to work together on non-linear developmentMaking the most of Git involves learning best practices to streamline workflows and ensure consistency across a codebase.
+-Make incremental, small changes
+-Keep commits atomic
+-Develop using branches
+-Write descriptive commit messages
+-Obtain feedback through code reviews
+-Identify a branching strategy
+
+V: CLONING A GIT REPOSETORY TO LOCAL
+1. On GitHub.com, navigate to the main page of the repository.
+2. Above the list of files, click Code
+3. Copy the URL for the repository.
+4. Open Git Bash.
+5. Change the current working directory to the location where you want the cloned directory.
+6. Type git clone, and then paste the URL you copied earlier.
+7. git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+8. Press Enter to create your local clone.
+
+
+REFERENCES
+
+https://www.pluralsight.com/resources/blog/cloud/git-terms-explained
+https://opensource.com/article/22/11/git-concepts
+https://www.atlassian.com/git
+https://www.freecodecamp.org/news/10-important-git-commands-that-every-developer-should-know/
+https://jelvix.com/blog/bitbucket-vs-github-vs-gitlab#:~:text=GitHub%20offers%20a%20lot%20of,it%20offers%20the%20fastest%20performance.
+https://about.gitlab.com/topics/version-control/version-control-best-practices/
+https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
+
+
+
+ 
+
+
+
+
+
+
+
+
+
