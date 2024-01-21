@@ -1,0 +1,11 @@
+2. WRITE BASIC COMMANDS OF GIT.
+1.  git config: This command in Git is used to set or view configuration options for our Git environment.
+2.  git init: This command initializes a new Git repository in the current directory.
+3. git status: Displays the current state of our working directory, showing modified, untracked or staged files.
+4.  git add: It is used to stage changes for the next commit in Git.
+5.  git clone <repository_url>: Clone a repository from a specified URL. This creates a copy of the repository on your local machine.
+6. git commit-m”add html file”: Commits the changes in the staging area to the local repository with a descriptive message.
+7.  git branch <branch_name>: Creates a new branch with the specified name.
+8. git push origin <branch_name>: Pushes our local changes to a remote repository on the specified branch.
+9.   git pull origin <branch_name>: Fetches changes from a remote repository and merges them into the current branch.
+10. git branch feature: This command creates a new branch named "feature" but does not switch to that branch.
