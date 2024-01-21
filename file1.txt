@@ -1,0 +1,11 @@
+GIT TASK 1
+1. CONCEPTS OF GIT EXPLAINING VARIOUS TERMS.
+1. REPOSITORY: A repository serves as a storage location for maintaining the version history of the project and this may exist either locally on the machine or remotely on a server.
+2. CLONNING: It is the process of generating a duplicate of remote repository on our local machine, enabling us to make modifications to the project without impacting the original repository. It is performed using ‘git clone’ command.
+3. COMMITING CHANGES: It is the process of saving changes made to local repository using ‘git commit’ command.
+4. PUSH: Pushing is the process of uploading the local changes to a remote repository, making them accessible to others.
+5. PULL: Pulling is the process of fetching changes and then merging them into your local branch.
+6. FORK: It is the process of creating a personal copy of someone else's project or repository. This copy is independent of the original and allows making changes, contributing to the project without directly affecting the original repository.
+7. MILESTONES: It refers to a specific point or event in the development timeline of a project.
+8. PULL REQUEST: It is a way to propose changes to a repository. It allows others to review and discuss the proposed changes before merging.
+9. FETCH: Fetching is the process of downloading changes from a remote repository without merging them into your working copy.
