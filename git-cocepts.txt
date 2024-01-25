@@ -1,0 +1,150 @@
+Git & Github
+
+
+Basic concepts of Git
+
+
+
+
+Git is a distributed version control system widely used in software development to manage and track changes in source code. Here are some fundamental concepts and terms associated with Git:
+
+
+* Repository (Repo): It is a storage space where your project's source code and its history are kept.
+
+
+* Commit: It is a snapshot of the changes made to the code at a specific point in time. It represents a set of changes that are grouped together with a unique identifier ie; hash.
+
+
+* Branch: It represents an independent line of development that allows you to work on a feature or fix it without affecting the main codebase.
+
+
+* Clone: It is the process of creating a copy of a repository, including all of its history and branches, on your local machine.
+
+
+* Pull: It is used to fetch and download content from a remote repository and immediately update the local repository to match that content
+
+
+* Push: It is the process of sending your local changes to a remote repository, and updating it with the latest code.
+
+
+* Merge: It combines changes from different branches or commits into a single branch.
+
+
+* Conflict: A conflict occurs when Git is unable to automatically merge changes due to conflicting modifications in the same lines of code.
+
+
+* Remote: A remote is a version of your repository stored on another computer or server. Common remote repository hosting services include GitHub, GitLab, and Bitbucket.
+
+
+* Fetch: It retrieves changes from a remote repository without merging them into your local branch. It updates your knowledge of the remote branches.
+
+
+* Pull Request (PR): In the context of online platforms like GitHub, a pull request is a request to merge changes from one branch into another.
+
+
+* Fork: It creates a personal copy of someone else's repository on your account. It allows you to make changes without affecting the original project.
+
+
+
+
+Commands of Git
+
+
+* Initialization: To initialize a git
+git init
+
+
+* Git clone: To clone a repo
+git clone <repository_url>
+
+
+* Git Configuration: To configure the 
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+
+* Git status: To check the status of a repo
+git status
+
+
+* Git add: To add changes to the staging area
+Add a specific file: git add <file_name>     
+Add all changes: git add .      
+
+
+* Git commit: To commit changes to a repo
+git commit -m "Your commit message"
+
+
+* Git Branch: To create a new branch
+git branch <branch_name>
+
+
+* Switch to different branch 
+git checkout <branch_name>
+
+
+* Git pull: To pull changes from a remote repo
+git pull
+
+
+* Git push: To push changes to a remote repo
+git push origin <branch_name>
+
+
+
+
+Concepts on Github, GitLab, BItBucket
+
+
+GitHub, GitLab, and Bitbucket are web-based platforms designed to host and manage Git repositories, providing essential infrastructure for collaborative software development. GitHub, a widely adopted platform, supports public and private repositories, features pull requests for code review and includes an issue tracker for project management. GitHub Actions automates workflows, and social features such as stars and watches enhance community engagement.
+
+
+GitLab, a comprehensive platform, offers both public and private repositories and introduces powerful CI/CD capabilities with built-in pipelines. Merge Requests facilitate code review, and Auto DevOps simplifies the configuration of CI/CD workflows. GitLab also emphasizes security features, such as a container registry and integrated security scanning tools.
+
+
+Bitbucket, another popular choice, supports both Git and Mercurial repositories and features pull requests for code collaboration. With Smart Mirroring for distributed teams, Bitbucket enhances repository access. It provides flexible branching strategies, including Gitflow, and integrates seamlessly with Jira for issue tracking and project management. Bitbucket's security features include fine-grained access control and IP whitelisting. The choice among GitHub, GitLab, or Bitbucket often depends on specific project needs, team preferences, and the desired feature set, including collaboration tools, CI/CD capabilities, and integration options.
+
+
+
+
+Industrial practices of using Git
+
+
+In industrial practices, Git has become an integral part of the software development workflow, offering version control and collaboration capabilities. Here are key aspects of using Git in industrial settings:
+
+
+* Version Control
+Industrial teams often employ branching strategies like Gitflow to manage parallel development efforts, ensuring stability in the main branches. Git tags are used to mark specific commits as releases, enabling clear versioning of software for deployment.
+
+
+* Collaboration and Code Review
+Teams leverage pull requests (or merge requests) to propose, review, and discuss changes before merging them into the main codebase, promoting code quality and collaboration. Git platforms facilitate thorough code reviews, allowing developers to provide feedback and catch issues early in the development process.
+
+
+* Continuous Integration/Continuous Deployment (CI/CD)
+Git integrates with CI/CD systems, enabling automated testing, building, and deployment processes. This ensures code quality and accelerates the delivery pipeline.
+
+
+* Traceability and Auditing
+Git's commit history provides a detailed and chronological record of changes, enhancing traceability for debugging, auditing, and compliance purposes. Developers can use Git annotations and blame commands to identify the author of each line of code, aiding in accountability and understanding code origins.
+
+
+* Remote Collaboration
+Git's distributed nature allows teams to work seamlessly across different locations and time zones, supporting global collaboration in industrial environments. Centralized Git repositories on platforms like GitHub, GitLab, or Bitbucket enable secure and accessible collaboration among team members.
+
+
+
+
+Cloning a repo to local
+
+
+1. Copy the repository URL from the main page of the repository you want to clone. Click the "Code" button, and make sure to select the HTTPS or SSH option 
+2. Open the terminal or command prompt on your local machine.
+3. Use the cd command to navigate to the directory where you want to store the cloned repository. 
+4. Type the code:
+git clone <repository_url>
+
+
+For example: 
+git clone https://github.com/example-user/example-repo.git
