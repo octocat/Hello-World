@@ -1,1 +1,9 @@
-Hello World!
+## My Robot Research
+
+Research topic: Dual-arm robot trajectory planning.
+
+Main modules:
+- Kinematics
+- RRT-Connect
+- Collision avoidance
+- Compliance compensation
