@@ -1,0 +1,7 @@
+
+Activity 1 - Python Setup
+
+1. Installed Python.
+2. Installed Python extension in VS Code.
+3. Created test.py.
+4. Successfully executed my first Python program.

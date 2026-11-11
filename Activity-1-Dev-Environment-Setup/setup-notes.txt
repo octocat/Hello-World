@@ -1,0 +1,10 @@
+
+
+Activity 1 - Setup Notes
+
+I installed Visual Studio Code and the C/C++ extension.
+I installed MSYS2 to get the GCC compiler.
+Initially, GCC was not recognised in the terminal.
+I installed the required GCC toolchain.
+I configured the compiler path.
+I successfully compiled and executed my Hello World program.
