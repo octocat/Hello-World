@@ -16,3 +16,13 @@ Hello World!
 4. Configured GCC in Windows PATH.
 5. Verified GCC and G++ versions.
 6. Successfully compiled and executed Hello World in C.
+
+
+## Projects
+
+### 1. 2D Graphics Editor
+- Developed using C programming.
+- Created a simple canvas for drawing and editing graphics.
+
+### 2. Movie Recommendation System
+- A project focused on recommending movies based on user preferences.
