@@ -1,1 +1,476 @@
 Hello World!
+This is my forked repository.
+Maven HelloWorld Project – Short Explanation
+A Maven HelloWorld project is a simple Java application created using Maven to understand project structure, compilation and execution.
+1. Create Maven Project
+In VS Code / terminal, create a Maven project using:
+mvn archetype:generate -DgroupId=com.example -DartifactId=HelloWorld -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+
+Move into the project:
+cd HelloWorld
+
+
+
+
+
+
+
+
+
+# KUBERNETES AND NAGIOS PRACTICAL
+
+# PART 1: MINIKUBE SETUP
+
+# Step 1: Download Minikube
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-installer.exe
+
+# Step 2: Install Minikube
+.\minikube-installer.exe
+
+# Step 3: Start Docker Desktop first, then start Minikube
+minikube start --driver=docker
+
+# Step 4: Check Minikube status
+minikube status
+
+# Step 5: Check versions
+minikube version
+kubectl version --client
+
+# Step 6: Check pods
+minikube kubectl -- get pods -A
+
+# PART 2: NGINX DEPLOYMENT IN KUBERNETES
+
+# Step 1: Start Minikube
+minikube start
+
+# Step 2: Create Nginx deployment
+kubectl create deployment mynginx --image=nginx
+
+# If deployment already exists, update image
+kubectl set image deployment/mynginx nginx=nginx:latest
+
+# Step 3: Check deployment and pods
+kubectl get deployments
+kubectl get pods
+kubectl describe pods
+
+# Step 4: Expose deployment as NodePort service
+kubectl expose deployment mynginx --type=NodePort --port=80 --target-port=80
+
+# Step 5: Scale deployment to 4 replicas
+kubectl scale deployment mynginx --replicas=4
+
+# Step 6: Verify deployment and service
+kubectl get deployments
+kubectl get pods
+kubectl get service mynginx
+
+# Step 7: Access Nginx using port forwarding
+kubectl port-forward svc/mynginx 8081:80
+
+# Open browser: http://localhost:8081
+
+# Alternative: Use Minikube tunnel if required
+minikube tunnel
+
+# In another terminal
+minikube service mynginx --url
+
+# Step 8: Open Kubernetes dashboard
+minikube dashboard
+
+# Step 9: Cleanup (Optional)
+kubectl delete deployment mynginx
+kubectl delete service mynginx
+minikube stop
+minikube delete
+
+
+# PART 3: NAGIOS MONITORING USING DOCKER
+
+# Step 1: Pull Nagios image
+docker pull jasonrivers/nagios:latest
+
+# Step 2: Run Nagios container
+docker run --name nagiosdemo -p 8888:80 jasonrivers/nagios:latest
+
+# Step 3: Open browser
+# http://localhost:8888
+
+# Login credentials:
+# Username: nagiosadmin
+# Password: nagios
+
+# Step 4: Explore Nagios dashboard
+# Hosts - View monitored systems
+# Services - View monitored services
+# Alerts - View recent notifications
+
+# Step 5: Stop Nagios
+docker stop nagiosdemo
+
+# Step 6: Remove container
+docker rm nagiosdemo
+
+# Step 7: List Docker images
+docker images
+
+# Step 8: Remove Nagios image (Optional)
+docker rmi jasonrivers/nagios:latest
+
+
+# PART 4: AWS FREE TIER ACCOUNT CREATION
+
+# 1. Open https://aws.amazon.com
+# 2. Click Create AWS Account.
+# 3. Enter email ID and account name.
+# 4. Enter verification code received in email.
+# 5. Provide contact details and accept terms.
+# 6. Enter billing details and complete verification.
+# 7. Verify mobile number using SMS OTP.
+# 8. Select Basic Support plan.
+# 9. Click Complete Sign Up.
+# 10. Open AWS Management Console.
+# 11. Select Role: Academic/Researcher.
+# 12. Select Interest: DevOps.
+# 13. Click Submit.
+# 14. Sign in as Root User.
+
+
+# PART 5: KUBERNETES TROUBLESHOOTING COMMANDS
+
+# Check pods
+kubectl get pods
+
+# Describe pod
+kubectl describe pod <pod-name>
+
+# View pod logs
+kubectl logs <pod-name>
+
+# View previous container logs
+kubectl logs <pod-name> --previous
+
+# Check deployments
+kubectl get deployments
+
+# Describe deployment
+kubectl describe deployment <deployment-name>
+
+# Check services
+kubectl get services
+
+# Rollback deployment
+kubectl rollout undo deployment/mynginx
+
+# Check rollout status
+kubectl rollout status deployment/mynginx
+
+# View rollout history
+kubectl rollout history deployment/mynginx
+
+# Expose service using NodePort
+kubectl expose deployment mynginx --type=NodePort --port=80
+
+
+# PART 6: NAGIOS TROUBLESHOOTING COMMANDS
+
+# Start Nagios
+docker start nagiosdemo
+
+# Stop Nagios
+docker stop nagiosdemo
+
+# Check running containers
+docker ps
+
+# Check all containers
+docker ps -a
+
+# View Nagios logs
+docker logs nagiosdemo
+
+# View logs continuously
+docker logs -f nagiosdemo
+
+# Restart Nagios
+docker restart nagiosdemo
+
+# Inspect Nagios container
+docker inspect nagiosdemo
+
+
+# PART 7: DOCKERFILE FOR NGINX
+
+# Step 1: Create project folder
+mkdir nginx-project
+cd nginx-project
+
+# Step 2: Create Dockerfile
+notepad Dockerfile
+
+# Paste the following content into Dockerfile:
+
+# FROM nginx:latest
+# EXPOSE 80
+# CMD ["nginx", "-g", "daemon off;"]
+
+# Save and close Notepad.
+
+# Step 3: Build Docker image
+docker build -t mynginx .
+
+# Step 4: Run container
+docker run -d -p 8080:80 --name nginx-container mynginx
+
+# Step 5: Open browser
+# http://localhost:8080
+
+# Step 6: Check container
+docker ps
+
+# Step 7: Stop container
+docker stop nginx-container
+
+# Step 8: Remove container
+docker rm nginx-container
+
+
+
+# CLOUD DEPLOYMENT USING AWS – PRACTICAL
+
+# PART 1: CREATE MAVEN WEB JAVA PROJECT AND PUSH TO GITHUB
+
+# Step 1: Create Maven-web-java project in Eclipse.
+# Step 2: Develop the web application.
+# Step 3: Push the project to GitHub.
+# Step 4: Copy the GitHub repository URL.
+
+
+# PART 2: CREATE UBUNTU EC2 INSTANCE IN AWS
+
+# Step 1: Login to AWS / Canvas account.
+# Step 2: Open Services -> EC2.
+# Step 3: Select a nearby AWS region.
+# Step 4: Click Launch Instance.
+
+# Configure EC2 instance:
+
+# Name: ubuntu
+# AMI: Ubuntu Server (Free Tier Eligible)
+# Architecture: 64-bit
+# Instance Type: t2.micro
+# Key Pair: Create new key pair
+# Download .pem file and save it in AWS folder.
+# Network Settings: Create Security Group.
+# Allow HTTP and HTTPS traffic.
+# Storage: 8 GB.
+# Number of Instances: 1.
+# Click Launch Instance.
+
+# Step 5: Select the created instance.
+# Step 6: Click Connect.
+# Step 7: Open SSH Client tab.
+# Step 8: Copy the SSH command.
+
+
+# PART 3: CONNECT TO UBUNTU EC2 INSTANCE
+
+# Step 1: Open PowerShell or Git Bash.
+# Step 2: Navigate to the folder containing the .pem file.
+
+cd path/to/AWS
+
+# Step 3: Connect using the SSH command copied from AWS.
+# Example:
+
+ssh -i "your-key.pem" ubuntu@<EC2-PUBLIC-IP>
+
+# Accept the connection if prompted.
+
+
+# PART 4: INSTALL REQUIRED SOFTWARE IN UBUNTU
+
+# Step 1: Update Ubuntu packages.
+
+sudo apt update
+
+# Step 2: Install Docker.
+
+sudo apt-get install docker.io -y
+
+# Step 3: Install Git.
+
+sudo apt install git -y
+
+# Step 4: Install Nano editor.
+
+sudo apt install nano -y
+
+# Step 5: Start Docker.
+
+sudo systemctl start docker
+
+# Step 6: Enable Docker.
+
+sudo systemctl enable docker
+
+
+# PART 5: CLONE GITHUB PROJECT
+
+# Step 1: Clone the Maven web Java project.
+
+git clone <GITHUB-REPOSITORY-LINK>
+
+# Step 2: Navigate to the project folder.
+
+cd maven-web-java
+
+# Check project files.
+
+ls
+
+
+# PART 6: CREATE DOCKERFILE
+
+# Step 1: Create Dockerfile.
+
+nano Dockerfile
+
+# Step 2: Paste the following Dockerfile content:
+
+# Use Tomcat as the base image
+FROM tomcat:9-jdk11
+
+# Copy the built WAR file to Tomcat webapps directory
+COPY target/*.war /usr/local/tomcat/webapps/
+
+# Expose the Tomcat port
+EXPOSE 8080
+
+# Start Tomcat server
+CMD ["catalina.sh", "run"]
+
+# Step 3: Save the file.
+# Press CTRL + O, then ENTER.
+# Press CTRL + X to exit Nano.
+
+# NOTE:
+# Build the Maven project first so that the WAR file exists in target/.
+# If Maven is not installed, install it or build the WAR locally and push/copy it to EC2.
+
+
+# PART 7: BUILD DOCKER IMAGE
+
+# Step 1: Build the Docker image.
+
+sudo docker build -t myapp .
+
+# Step 2: Check Docker images.
+
+sudo docker images
+
+
+# PART 8: RUN DOCKER CONTAINER
+
+# Step 1: Run the Docker image.
+
+sudo docker run -d --name app-demo -p 6060:8080 myapp
+
+# Step 2: Check running containers.
+
+sudo docker ps
+
+# Step 3: View container logs.
+
+sudo docker logs app-demo
+
+
+# PART 9: ACCESS APPLICATION PUBLICLY
+
+# Step 1: Go to AWS EC2 Dashboard.
+# Step 2: Select your EC2 instance.
+# Step 3: Open Security Groups.
+# Step 4: Edit Inbound Rules.
+# Step 5: Add the following rule:
+
+# Type: Custom TCP
+# Port Range: 6060
+# Source: Your IP (or 0.0.0.0/0 for public access)
+
+# Save the rules.
+
+# Step 6: Copy the EC2 Public IPv4 address.
+# Step 7: Open browser and enter:
+
+# http://<EC2-PUBLIC-IP>:6060
+
+# Your Maven web application should open.
+
+
+# PART 10: USEFUL DOCKER COMMANDS
+
+# Check running containers
+sudo docker ps
+
+# Check all containers
+sudo docker ps -a
+
+# Check images
+sudo docker images
+
+# View container logs
+sudo docker logs app-demo
+
+# Stop container
+sudo docker stop app-demo
+
+# Start container
+sudo docker start app-demo
+
+# Restart container
+sudo docker restart app-demo
+
+# Remove container (after stopping)
+sudo docker rm app-demo
+
+# Remove image (after removing container)
+sudo docker rmi myapp
+
+
+# PART 11: USEFUL EC2 COMMANDS
+
+# Check current user
+whoami
+
+# Check current directory
+pwd
+
+# List files
+ls
+
+# Check IP address
+hostname -I
+
+# Check running services
+sudo systemctl status docker
+
+# Restart Docker
+sudo systemctl restart docker
+
+
+# PART 12: CLEANUP (OPTIONAL)
+
+# Stop Docker container
+sudo docker stop app-demo
+
+# Remove Docker container
+sudo docker rm app-demo
+
+# Remove Docker image
+sudo docker rmi myapp
+
+# Stop or terminate EC2 instance from AWS Console.
